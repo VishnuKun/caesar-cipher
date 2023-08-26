@@ -5,7 +5,7 @@
 require './lib/caesar_cipher'
 # returns encrypted data as per the shift factor 
 describe 'caesar_cipher' do
-  it 'should return "Kayak" unchanged' do
+  it 'should work with palindromes' do
     expect(caesar_cipher('Kayak', 0)).to eql('Kayak')
   end
   it 'should return "lipps" for "hello"' do
